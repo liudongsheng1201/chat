@@ -15,14 +15,14 @@
         const valid = await FieldValidator.validatorForm([txtLoginId, txtLoginPwd])
         if (!valid) return
         const formData = new FormData(formDOM)
-        const data  = Object.fromEntries(formData.entries())
-        
+        const data = Object.fromEntries(formData.entries())
+
         const res = await API.loginApi(data)
-        if(res.code !== 0) {
+        if (res.code !== 0) {
             txtLoginId.errDOM.innerHTML = res.msg
             return
         }
-        location.href = './index.html'
+        location.href = './chat/index.html'
     }
 
 })()
