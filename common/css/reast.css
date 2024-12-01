@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+ul,
+ol,
+dl {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cleatFix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
