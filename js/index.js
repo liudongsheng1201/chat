@@ -6,7 +6,7 @@
     const close = () => {
         localStorage.removeItem(API.AUTHORIZATION)
         localStorage.removeItem(USER_INFO)
-        location.href = './chat/login.html'
+        location.href = './login.html'
     }
 
     /**
@@ -80,7 +80,7 @@
         const res = await API.chatApi(data.content)
         if (res.code !== 0) {
             alert(res.msg)
-            location.href = './chat/login.html'
+            location.href = './login.html'
             return
         }
         sendMsg(null, res.data)

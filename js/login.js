@@ -22,7 +22,7 @@
             txtLoginId.errDOM.innerHTML = res.msg
             return
         }
-        location.href = './chat/index.html'
+        location.href = './index.html'
     }
 
 })()
